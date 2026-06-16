@@ -1,0 +1,9 @@
+tensorflow
+xgboost
+shap
+requests
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib

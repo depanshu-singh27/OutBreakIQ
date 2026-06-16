@@ -1,0 +1,82 @@
+[
+  {
+    "feature": "abs_latitude",
+    "mean_shap": 0.07547929883003235
+  },
+  {
+    "feature": "is_tropical",
+    "mean_shap": 0.012496880255639553
+  },
+  {
+    "feature": "heat_index",
+    "mean_shap": 0.008431403897702694
+  },
+  {
+    "feature": "cos_week",
+    "mean_shap": 0.006747061852365732
+  },
+  {
+    "feature": "temp_mean",
+    "mean_shap": 0.004490417893975973
+  },
+  {
+    "feature": "latitude",
+    "mean_shap": 0.004478153772652149
+  },
+  {
+    "feature": "humidity_mean",
+    "mean_shap": 0.004046105779707432
+  },
+  {
+    "feature": "is_equatorial",
+    "mean_shap": 0.0033919208217412233
+  },
+  {
+    "feature": "temp_mean_roll8",
+    "mean_shap": 0.003265393665060401
+  },
+  {
+    "feature": "temp_mean_roll4",
+    "mean_shap": 0.003112100064754486
+  },
+  {
+    "feature": "sin_week",
+    "mean_shap": 0.0015277992933988571
+  },
+  {
+    "feature": "pm25_roll8",
+    "mean_shap": 0.0007008843822404742
+  },
+  {
+    "feature": "is_temperate",
+    "mean_shap": 0.0006419752608053386
+  },
+  {
+    "feature": "humidity_mean_roll8",
+    "mean_shap": 0.000634792260825634
+  },
+  {
+    "feature": "temp_mean_lag1w",
+    "mean_shap": 0.0005927340243943036
+  },
+  {
+    "feature": "rainfall_total_roll8",
+    "mean_shap": 0.0005609196959994733
+  },
+  {
+    "feature": "temp_mean_lag4w",
+    "mean_shap": 0.0004921536892652512
+  },
+  {
+    "feature": "humidity_mean_roll4",
+    "mean_shap": 0.000474619388114661
+  },
+  {
+    "feature": "population",
+    "mean_shap": 0.0004269570636097342
+  },
+  {
+    "feature": "rainfall_total_roll4",
+    "mean_shap": 0.0003627413243521005
+  }
+]

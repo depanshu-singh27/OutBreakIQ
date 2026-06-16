@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-04-29 07:01:05 UTC",
+  "performance": {
+    "mae_fusion": 2.218438879333481,
+    "rmse_fusion": 2.9126218431808706,
+    "r2_fusion": -0.25801045086304497,
+    "mape_fusion": 8.575854891638018,
+    "within_10pct": 59.61538461538461,
+    "within_25pct": 98.07692307692307,
+    "median_abs_error_fusion": 2.9916139818810805,
+    "mae_lstm": 2.760348186790173,
+    "rmse_lstm": 3.4852591988508967,
+    "mae_xgb": 1.8641097031240315,
+    "rmse_xgb": 2.614511858369838
+  },
+  "training_info": {
+    "train_samples": 71565,
+    "test_samples": 18330,
+    "split_ratio": 20.3905,
+    "n_countries": 195,
+    "n_features": 40,
+    "seq_length": 8,
+    "year_range_train": [
+      2015,
+      2022
+    ],
+    "year_range_test": [
+      2022,
+      2023
+    ]
+  },
+  "risk_distribution": {
+    "low_count": 60,
+    "medium_count": 90,
+    "high_count": 35,
+    "critical_count": 10,
+    "low_pct": 30.77,
+    "medium_pct": 46.15,
+    "high_pct": 17.95,
+    "critical_pct": 5.13
+  },
+  "regional_high_critical": {
+    "Africa": 23,
+    "Asia": 10,
+    "Europe": 0,
+    "Americas": 6,
+    "Oceania": 6,
+    "Other": 0
+  },
+  "top_10_high_risk": [
+    {
+      "iso3": "LAO",
+      "country_name": "Lao PDR",
+      "risk_score": 94.05,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "IND",
+      "country_name": "India",
+      "risk_score": 92.15,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "COG",
+      "country_name": "Congo",
+      "risk_score": 90.25,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "LBR",
+      "country_name": "Liberia",
+      "risk_score": 88.35,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "TLS",
+      "country_name": "Timor-Leste",
+      "risk_score": 86.45,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "FSM",
+      "country_name": "Micronesia",
+      "risk_score": 84.55,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "GRD",
+      "country_name": "Grenada",
+      "risk_score": 82.65,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "NPL",
+      "country_name": "Nepal",
+      "risk_score": 80.75,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "PHL",
+      "country_name": "Philippines",
+      "risk_score": 78.85,
+      "dominant_disease": "respiratory"
+    },
+    {
+      "iso3": "IDN",
+      "country_name": "Indonesia",
+      "risk_score": 76.95,
+      "dominant_disease": "respiratory"
+    }
+  ],
+  "top_15_features": [
+    {
+      "rank": 1,
+      "feature": "abs_latitude",
+      "mean_shap": 0.07547929883003235,
+      "plain_english_description": "abs_latitude: Absolute latitude - broad climate zone / seasonality strength."
+    },
+    {
+      "rank": 2,
+      "feature": "is_tropical",
+      "mean_shap": 0.012496880255639553,
+      "plain_english_description": "is_tropical: Tropical flag (|lat|<25) - vector-friendly climate zones."
+    },
+    {
+      "rank": 3,
+      "feature": "heat_index",
+      "mean_shap": 0.008431403897702694,
+      "plain_english_description": "heat_index: Heat index from temperature and humidity - felt heat and heat-stress risk."
+    },
+    {
+      "rank": 4,
+      "feature": "cos_week",
+      "mean_shap": 0.006747061852365732,
+      "plain_english_description": "cos_week: Cosine of week-of-year - complements sine for full seasonal cycle."
+    },
+    {
+      "rank": 5,
+      "feature": "temp_mean",
+      "mean_shap": 0.004490417893975973,
+      "plain_english_description": "temp_mean: Current-week mean temperature - immediate climate context."
+    },
+    {
+      "rank": 6,
+      "feature": "latitude",
+      "mean_shap": 0.004478153772652149,
+      "plain_english_description": "latitude: Signed latitude - hemisphere and seasonal phase."
+    },
+    {
+      "rank": 7,
+      "feature": "humidity_mean",
+      "mean_shap": 0.004046105779707432,
+      "plain_english_description": "humidity_mean: Current-week humidity - concurrent moisture conditions."
+    },
+    {
+      "rank": 8,
+      "feature": "is_equatorial",
+      "mean_shap": 0.0033919208217412233,
+      "plain_english_description": "is_equatorial: Equatorial flag (|lat|<10) - year-round high transmission potential."
+    },
+    {
+      "rank": 9,
+      "feature": "temp_mean_roll8",
+      "mean_shap": 0.003265393665060401,
+      "plain_english_description": "temp_mean_roll8: Eight-week rolling average - medium-term environmental trend."
+    },
+    {
+      "rank": 10,
+      "feature": "temp_mean_roll4",
+      "mean_shap": 0.003112100064754486,
+      "plain_english_description": "temp_mean_roll4: Four-week rolling average - short-term environmental baseline."
+    },
+    {
+      "rank": 11,
+      "feature": "sin_week",
+      "mean_shap": 0.0015277992933988571,
+      "plain_english_description": "sin_week: Sine of week-of-year - smooth seasonal phase encoding."
+    },
+    {
+      "rank": 12,
+      "feature": "pm25_roll8",
+      "mean_shap": 0.0007008843822404742,
+      "plain_english_description": "pm25_roll8: Eight-week rolling average - medium-term environmental trend."
+    },
+    {
+      "rank": 13,
+      "feature": "is_temperate",
+      "mean_shap": 0.0006419752608053386,
+      "plain_english_description": "is_temperate: Temperate flag (|lat|>35) - different disease mix and seasonality."
+    },
+    {
+      "rank": 14,
+      "feature": "humidity_mean_roll8",
+      "mean_shap": 0.000634792260825634,
+      "plain_english_description": "humidity_mean_roll8: Eight-week rolling average - medium-term environmental trend."
+    },
+    {
+      "rank": 15,
+      "feature": "temp_mean_lag1w",
+      "mean_shap": 0.0005927340243943036,
+      "plain_english_description": "temp_mean_lag1w: Weekly mean temperature lagged - delayed climate effects on vectors and transmission."
+    }
+  ],
+  "backtest_summary": {
+    "mean_error": -1.4472403456825373,
+    "mean_pct_error": 8.575854891638018,
+    "worst_week": 33,
+    "best_week": 26
+  }
+}
