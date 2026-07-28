@@ -7,7 +7,7 @@ type LossRow = {
     val: number;
 };
 function buildLossRows(): LossRow[] {
-    const tl = history.train_loss ?? history.loss ?? [];
+    const tl = history.train_loss ?? [];
     const vl = history.val_loss ?? [];
     const ep = history.epochs && history.epochs.length > 0 ? history.epochs : tl.map((_, i) => i + 1);
     if (!tl.length)
